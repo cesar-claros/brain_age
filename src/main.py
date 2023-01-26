@@ -29,11 +29,11 @@ MAPS = ['Stiffness','Volume','DR','Stiffness-Volume','Stiffness-DR','Volume-DR',
 # MAPS = ['Stiffness-Volume-DR']
 # Define env variables
 os.environ['PYTHONHASHSEED'] = str(SEED)
-os.environ["WANDB_API_KEY"] = 'ab15e7f6f227fba11fa4b0caea1753daccb9276f'
-os.environ["WANDB_MODE"] = "offline"
-os.environ['WANDB_CACHE_DIR'] = '/work/cniel/sw/BrainAge/.cache'
-os.environ['WANDB_CONFIG_DIR'] = '/work/cniel/sw/BrainAge/'
-os.environ['WANDB_DIR'] = '/work/cniel/sw/BrainAge/'
+os.environ["WANDB_API_KEY"] = ''
+os.environ["WANDB_MODE"] = ""
+os.environ['WANDB_CACHE_DIR'] = ''
+os.environ['WANDB_CONFIG_DIR'] = ''
+os.environ['WANDB_DIR'] = ''
 
 #%%
 def main():
