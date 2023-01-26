@@ -1,0 +1,15 @@
+# Ignore Mac system files
+.cache
+
+# Ignore node_modules folder
+datasets
+results
+splits
+venv
+wandb
+
+# Ignore all text files
+*.txt
+
+# Ignore files related to API keys
+.env
