@@ -120,6 +120,17 @@ def preprocess(X_train, X_test, X_val=None, preproc_type='std'):
         X_test_pp = (X_test-min)/delta
         X_test_pp[np.isnan(X_test_pp)] = mu_adj
 
+    elif preproc_type == 'nan_to_num':
+        # X_train_pp = np.nan_to_num(X_train,nan=-1)
+        X_train_pp = X_train
+        # X_test_pp = np.nan_to_num(X_test,nan=-1)
+        X_test_pp = X_test
+        if type(X_val)==np.ndarray:
+            # X_val_pp = np.nan_to_num(X_val,nan=-1)
+            X_val_pp = X_val
+        print("unmodified maps")
+
+
     if type(X_val)==np.ndarray:
         ret = (X_train_pp, X_test_pp, X_val_pp)
     else:
